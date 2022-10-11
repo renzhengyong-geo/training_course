@@ -13,6 +13,7 @@ class PI
   ~PI() {}; 
 
   double fixed_constant_value();
+  double Abraham_Sharp_formulas();
   
   private:
   double cicular_constant;

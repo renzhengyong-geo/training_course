@@ -6,4 +6,19 @@ double PI::fixed_constant_value()
   return temp;
 }
 
+double PI::Abraham_Sharp_formulas()
+{
+	int n = 10000;
+	double PI_value;
+	PI_value = 0.;
+	int sign = -1;
+	for (int i = 0; i < n; i++)
+	{
+		sign *= -1;
+		PI_value = PI_value + (sign * 2 * powf(3, 0.5 - i)) / (2 * i + 1);
+	}
+	
+	return PI_value;
+}
+
 
