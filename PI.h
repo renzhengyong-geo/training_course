@@ -15,9 +15,9 @@ class PI
   double fixed_constant_value();
   double Gregory_Leibniz();
   double Srinivasa_Ramanujan ();
+  double Abraham_Sharp_formulas();
   
-  double factorial(int n);
-  
+  double factorial(int n);  
   private:
   double cicular_constant;
 };
