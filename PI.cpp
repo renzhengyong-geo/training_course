@@ -1,4 +1,5 @@
 #include "PI.h"
+#include <cmath>
 
 double PI::fixed_constant_value()
 {
@@ -21,4 +22,16 @@ double PI::Abraham_Sharp_formulas()
 	return PI_value;
 }
 
-
+double PI::Gregory_Leibniz_formula()
+{
+	int n = 10000;
+	int sign = -1;
+	double tp = 0;
+	for (int i=1; i<n; i++)
+	{
+		sign *= -1;
+		tp = tp + sign / double(2*i-1);
+	}
+	double pi_value = tp*4.;
+	return pi_value;
+}

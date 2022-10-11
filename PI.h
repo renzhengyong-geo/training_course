@@ -14,6 +14,7 @@ class PI
 
   double fixed_constant_value();
   double Abraham_Sharp_formulas();
+  double Gregory_Leibniz_formula();
   
   private:
   double cicular_constant;
