@@ -1,4 +1,10 @@
 #include "PI.h"
+#include <cmath>
+
+double PI::factorial(int n)
+{
+  return std::tgamma(n+1);
+}
 
 double PI::fixed_constant_value()
 {
@@ -6,4 +12,20 @@ double PI::fixed_constant_value()
   return temp;
 }
 
+double PI::Gregory_Leibniz()
+{
+  double temp=0.;
+  for(int k=1; k<500000; k++)
+    temp+= std::pow(-1,k+1)/(2*k-1);
+  temp = temp*4.0;
+  return temp;
+}
 
+double PI::Srinivasa_Ramanujan()
+{
+  double temp=0.;
+  for(int n=0; n<10; n++)
+    temp+= factorial(4*n)*(1103+26390*n)/(std::pow(factorial(n),4)*std::pow(396,4*n));
+  temp*= 2*std::sqrt(2)/9801;
+  return 1.0/temp;
+}
