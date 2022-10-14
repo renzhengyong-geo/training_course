@@ -12,13 +12,17 @@ class PI
   PI() { cicular_constant=0.;} 
   ~PI() {}; 
 
-  double fixed_constant_value();
+  // double fixed_constant_value();
+  double MachinFormula();
   
   private:
   double cicular_constant;
 };
 
 #endif //_PI_H
+
+
+
 
 
 
