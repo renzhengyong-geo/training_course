@@ -6,8 +6,8 @@ int main()
 {
     // return the fixed value of PI;
     class PI piclass;
-    double value = piclass.fixed_constant_value();
+    double value = piclass.MachinFormula();
     std::cout.precision(50);
-    std::cout<<"fixed constant value:\t"<<value<<"\n";
+    std::cout<<"Pi_MachinFormula:\t"<<value<<"\n";
     return 0;
 }
