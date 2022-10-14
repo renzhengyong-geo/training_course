@@ -24,6 +24,11 @@ int main()
     value = piclass.Abraham_Sharp_formulas();
     std::cout.precision(50);
     std::cout<<"Abraham Sharp formulas value:\t"<<value<<"\n";
+    
+    // return the Machin Formula value of PI;
+    double value = piclass.MachinFormula();
+    std::cout.precision(50);
+    std::cout<<"PI_MachinFormula:\t"<<value<<"\n";
 
 
     return 0;
