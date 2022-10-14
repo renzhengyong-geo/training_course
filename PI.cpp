@@ -54,3 +54,16 @@ double PI::MachinFormula()
   return temp;
 }
 
+double PI::Newton_formula()
+{ 
+	int m = 15000;
+	int sign = -1;
+	double t_p = 0;
+	for (int i=1; i<m; i++)
+	{
+		sign *= -1;
+		t_p = t_p + sign / double(2*i-1);
+	}
+	double pi_value = t_p*4.;
+	return pi_value;
+}

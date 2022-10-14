@@ -17,6 +17,8 @@ class PI
   double Srinivasa_Ramanujan ();
   double Abraham_Sharp_formulas();
   double MachinFormula();
+  double Newton_formula();
+
   
   double factorial(int n);  
   private:

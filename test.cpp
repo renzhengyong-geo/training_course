@@ -30,6 +30,11 @@ int main()
     std::cout.precision(50);
     std::cout<<"PI_MachinFormula:\t"<<value<<"\n";
 
+    // return the Newton_formula value of PI;
+    value = piclass.Newton_formula();
+	std::cout.precision(50);
+    std::cout<<"Newton_formula formula value:\t"<<value<<"\n";
+    
 
     return 0;
 }
