@@ -48,3 +48,9 @@ double PI::Abraham_Sharp_formulas()
 	return PI_value;
 }
 
+double PI::MachinFormula()
+{
+  double temp= 16*atan(1/5.0) - 4*atan(1/239.0) ;
+  return temp;
+}
+

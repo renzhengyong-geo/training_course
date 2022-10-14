@@ -16,6 +16,7 @@ class PI
   double Gregory_Leibniz();
   double Srinivasa_Ramanujan ();
   double Abraham_Sharp_formulas();
+  double MachinFormula();
   
   double factorial(int n);  
   private:
